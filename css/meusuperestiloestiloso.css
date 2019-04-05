@@ -1,60 +1,99 @@
-@charset "UTF-8";
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+@font-face {
+    font-family: 'Kenyan Rg';
+    src:url(../fonte/kenyan\ coffee\ rg.ttf);
+}
 
 body {
     text-size-adjust: 100%;
+    font-family: Ubuntu, Helvetica, sans-serif;
+    margin: 0;
+    background-image: url(../img/bkg.jpg)
 }
 
 header {
     width: 100%;
     height: 200px;
-}
+    background-color: antiquewhite;
 
-nav {
+} 
+
+nav{
     width: 100%;
-    text-align: center;
     background-color: #0b8f82;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    text-decoration: none;
-    font-size: 1.2em;
-    color: white;
-    margin: 20px 10px;    
-}
-
-nav ul li a:hover {
-    text-decoration: none;
-    color: #0b8f82;
-    background-color: white;
+    font-family: 'Kenyan Rg';
+    font-size: 1.5em;
+    text-align: center;
+    letter-spacing: 1px;
     
 }
 
-article {
-    text-align: justify;
+nav ul{
+	list-style: none;	
 }
 
-article h1 {}
+nav ul li{
+	display: inline;
+    text-transform: uppercase;
+    
+}
+
+nav ul li a{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+}
+
+nav ul li a:hover{
+	color: #0b8f82;
+	background-color: white;
+}
+
+article {
+    width: 80%;
+    margin: auto;
+    background-color: aliceblue;
+    text-align: justify;
+    padding: 10px;
+}
+
+article h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+}
 
 article h2 {}
 
 article p {}
 
-footer {}
+article table{
 
-footer img {}
+}
 
-footer ul {}
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: beige;
+    text-align: center;
+}
 
-footer ul li {}
+footer img {
+    width: 100px;
+    float: left;
+}
 
-footer ul li a {}
+footer ul {
+    float: left;
+}
 
-footer small {}
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a {
+	text-decoration: none;
+}
