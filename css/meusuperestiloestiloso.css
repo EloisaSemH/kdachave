@@ -3,91 +3,240 @@
 
 @font-face {
     font-family: 'Kenyan Rg';
-    src:url(../fonte/kenyan\ coffee\ rg.ttf);
+    src: url(../fonte/kenyan\ coffee\ rg.ttf);
 }
 
 body {
     text-size-adjust: 100%;
     font-family: Ubuntu, Helvetica, sans-serif;
     margin: 0;
-    background-image: url(../img/bkg.jpg)
+    background-image: url(../img/bkg.jpg);
 }
 
 header {
     width: 100%;
-    height: 200px;
-    background-color: antiquewhite;
+    background-color: white;
+    padding: 0;
+}
 
-} 
-
-nav{
+nav {
     width: 100%;
     background-color: #0b8f82;
     font-family: 'Kenyan Rg';
     font-size: 1.5em;
     text-align: center;
     letter-spacing: 1px;
-    
+
 }
 
-nav ul{
-	list-style: none;	
+nav ul {
+    list-style: none;
 }
 
-nav ul li{
-	display: inline;
+nav ul li {
+    display: inline;
     text-transform: uppercase;
-    
+
 }
 
-nav ul li a{
-	display: inline-block;
-	text-decoration: none;
-	color: white;
-	padding: 10px;
+nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
 }
 
-nav ul li a:hover{
-	color: #0b8f82;
-	background-color: white;
+nav ul li a:hover {
+    color: #0b8f82;
+    background-color: white;
 }
 
 article {
     width: 80%;
-    margin: auto;
-    background-color: aliceblue;
-    text-align: justify;
-    padding: 10px;
+    /*    height: 1000px;*/
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
 }
 
 article h1 {
     text-transform: uppercase;
     text-align: center;
     font-size: 2em;
+    font-family: 'Kenyan Rg';
+    letter-spacing: 1px;
 }
 
-article h2 {}
+article h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Kenyan Rg';
+    letter-spacing: 1px;
+}
 
-article p {}
+.paragrafos {
+    text-align: justify;
+    /* Recuo */
+    text-indent: 2em;
+}
 
-article table{
+article table {
+    margin: auto;
+    clear: both;
+    border-collapse: collapse;
+}
 
+article table caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+article table thead {
+    background-color: #343a40;
+    color: white;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+
+article table th {
+    padding: 10px;
+
+}
+
+article table tr {}
+
+article table td {
+    border-bottom: 1px solid #dee2e6;
+    padding: 5px;
+}
+
+article form {
+    width: 300px;
+    margin: auto;
+}
+
+article form input[type="text"],
+article form input[type="email"],
+textarea,
+select {
+    width: 100%;
+    border-radius: .25rem;
+    border: 1px solid #ced4da;
+    padding: .375rem .75rem;
+    margin: 5px 0 10px 0;
+}
+
+article form input[type="radio"] {
+    margin: 5px 5px 10px 10px;
+}
+
+article form textarea {
+    height: 200px;
+}
+
+article form input[type="submit"] {
+    background-color: #0b8f82;
+    border: 1px solid #0b8f82;
+    cursor: pointer;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 8px 18px;
+}
+
+article form input[type="submit"]:hover {
+    color: #0b8f82;
+    background-color: white;
+}
+
+.imagemCentro {
+    text-align: center;
+    margin: 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.pLeft {
+    width: 82%;
+    margin: 10px;
+    float: left;
+    text-align: left;
+}
+
+.pLeft h2 {
+    text-align: left;
+}
+
+.pRight {
+    width: 82%;
+    margin: 10px;
+    float: right;
+    text-align: right;
+
+}
+
+.pRight h2 {
+    text-align: right;
+}
+
+.quadro {
+    width: 300px;
+    /*    height: 300px;*/
+    background-color: #0b8f82;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.ajustar {
+    width: 1200px;
+    margin: auto;
+}
+
+.clear {
+    clear: both;
+}
+
+.cdn {
+    width: 80%;
+    height: 315px;
+    text-align: center;
+    margin: auto;
+    padding: 10px 20px;
+    background-color: #bbc6c8;
 }
 
 footer {
     width: 100%;
     height: 100px;
-    background-color: beige;
+    background-color: #0b8f82;
     text-align: center;
+    padding: 10px 0px;
+    clear: both;
 }
 
 footer img {
     width: 100px;
     float: left;
+    margin-left: 150px;
+}
+
+footer section {
+    margin-right: 150px;
+
 }
 
 footer ul {
-    float: left;
+    float: right;
 }
 
 footer ul li {
@@ -95,5 +244,17 @@ footer ul li {
 }
 
 footer ul li a {
-	text-decoration: none;
+    text-decoration: none;
+    color: white;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.liNome {
+    font-size: 1.2em;
+    font-family: 'Kenyan Rg';
+    letter-spacing: 1px;
+    color: white;
 }
