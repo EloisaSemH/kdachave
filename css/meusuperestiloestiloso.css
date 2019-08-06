@@ -1,10 +1,6 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
-
-@font-face {
-    font-family: 'Kenyan Rg';
-    src: url(../fonte/kenyan\ coffee\ rg.ttf);
-}
+@import url('https://fonts.googleapis.com/css?family=Teko:400,600&display=swap');
 
 body {
     text-size-adjust: 100%;
@@ -22,8 +18,9 @@ header {
 nav {
     width: 100%;
     background-color: #0b8f82;
-    font-family: 'Kenyan Rg';
-    font-size: 1.5em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.7em;
+    font-weight: bold;
     text-align: center;
     letter-spacing: 1px;
 
@@ -63,15 +60,15 @@ article h1 {
     text-transform: uppercase;
     text-align: center;
     font-size: 2em;
-    font-family: 'Kenyan Rg';
+    font-family: 'Teko', sans-serif;
     letter-spacing: 1px;
 }
 
 article h2 {
     text-transform: uppercase;
     text-align: center;
+    font-family: 'Teko', sans-serif;
     font-size: 2em;
-    font-family: 'Kenyan Rg';
     letter-spacing: 1px;
 }
 
@@ -88,6 +85,7 @@ article table {
 }
 
 article table caption {
+    font-family: 'Teko', sans-serif;
     font-size: 1.5em;
     font-weight: bold;
     text-transform: uppercase;
@@ -132,8 +130,20 @@ article form input[type="radio"] {
     margin: 5px 5px 10px 10px;
 }
 
+article form fieldset {
+    width: 100%;
+    border: none;
+    padding: .375rem .75rem;
+}
+
 article form textarea {
     height: 200px;
+    font-family: Ubuntu, Helvetica, sans-serif;
+    resize: vertical;
+}
+
+article form div {
+    text-align: center;
 }
 
 article form input[type="submit"] {
@@ -149,6 +159,22 @@ article form input[type="submit"] {
 article form input[type="submit"]:hover {
     color: #0b8f82;
     background-color: white;
+}
+
+article form input[type="reset"] {
+    background-color: #ffff;
+    border: 1px solid #0b8f82;
+    cursor: pointer;
+    color: #0b8f82;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 8px 18px;
+}
+
+article form input[type="reset"]:hover {
+    background-color: #0b8f82;
+    border: 1px solid #0b8f82;
+    color: #FFFFFF;
 }
 
 .imagemCentro {
@@ -195,10 +221,16 @@ article form input[type="submit"]:hover {
     margin: 10px;
     padding: 10px;
     text-align: center;
+    color: white;
+}
+
+.quadro img {
+    margin-top: 20px;
+    border-radius: 100%;
 }
 
 .ajustar {
-    width: 1200px;
+    width: 1020px;
     margin: auto;
 }
 
@@ -220,7 +252,7 @@ footer {
     height: 100px;
     background-color: #0b8f82;
     text-align: center;
-    padding: 10px 0px;
+    padding: 15px 0px;
     clear: both;
 }
 
@@ -253,8 +285,7 @@ footer ul li a:hover {
 }
 
 .liNome {
-    font-size: 1.2em;
-    font-family: 'Kenyan Rg';
-    letter-spacing: 1px;
+    font-size: 1.1em;
+    font-family: 'Teko', sans-serif;
     color: white;
 }

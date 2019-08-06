@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <title>Cadê a chave?</title>
     <meta charset="UTF-8">
@@ -8,10 +9,8 @@
 </head>
 
 <body>
-    <header>
-        <section class="imagemCentro">
-            <a href="../index.html"><img src="../img/casal-275x183.jpg" alt="Nilce Moretto está segurando uma câmera apontada para seu marido, Leon Martins, em um fundo branco" /></a>
-        </section>
+    <header class="imagemCentro">
+        <a href="../index.html"><img src="../img/casal-275x183.jpg" alt="Nilce Moretto está segurando uma câmera apontada para seu marido, Leon Martins, em um fundo branco" /></a>
     </header>
     <nav>
         <ul>
@@ -26,11 +25,11 @@
         <h1>Contato</h1>
         <form name="contato">
             <label>Nome completo</label>
-            <input type="text" name="nome" placeholder="Digite aqui" />
+            <input type="text" name="nome" placeholder="Digite aqui" required />
             <label>Email</label>
-            <input type="email" name="email" placeholder="exemplo@exemplo.com" />
+            <input type="email" name="email" placeholder="exemplo@exemplo.com" required />
             <label>Assunto</label>
-            <select name="assunto">
+            <select name="assunto" required>
                 <option>Anunciar</option>
                 <option>Crítica</option>
                 <option>Dúvida</option>
@@ -38,13 +37,16 @@
                 <option>Outro</option>
             </select>
             <label>Gênero</label>
-            <section>
-                <input type="radio" name="conheceu" value="f"><label>Feminino</label>
-                <input type="radio" name="conheceu" value="m"><label>Masculino</label>
-                <input type="radio" name="conheceu" value="o"><label>Outro</label>
-            </section>
-            <textarea></textarea>
-            <input type="submit" name="enviar" value="Enviar" />
+            <fieldset>
+                <input type="radio" name="genero" value="f"><label>Feminino</label>
+                <input type="radio" name="genero" value="m"><label>Masculino</label>
+                <input type="radio" name="genero" value="o"><label>Outro</label>
+            </fieldset>
+            <textarea placeholder="Digite aqui sua mensagem..." required></textarea>
+            <div>
+                <input type="reset" name="limpar" value="Limpar" />
+                <input type="submit" name="enviar" value="Enviar" />
+            </div>
         </form>
     </article>
     <footer>
@@ -52,16 +54,18 @@
         <section>
             <ul>
                 <li class="liNome">Nilce</li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">twitter</a></li>
+                <li><a href="https://www.youtube.com/user/cadeachave" target="_blank">Canal</a></li>
+                <li><a href="https://instagram.com/NilMoretto" target="_blank">Instagram</a></li>
+                <li><a href="https://twitter.com/NilMoretto" target="_blank">Twitter</a></li>
             </ul>
             <ul>
                 <li class="liNome">Leon</li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Twitter</a></li>
+                <li><a href="https://www.youtube.com/user/coisadenerd" target="_blank">Canal</a></li>
+                <li><a href="https://instagram.com/CdNLeon" target="_blank">Instagram</a></li>
+                <li><a href="https://twitter.com/CdNLeon" target="_blank">Twitter</a></li>
             </ul>
         </section>
     </footer>
-</body></html>
+</body>
+
+</html>
